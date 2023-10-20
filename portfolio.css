@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  
+    
+} 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#7f00ff,#791e85f0);
+    overflow-x: hidden;
+   
+}
+/* card 1 property starts  */
+/* ===================================================================================== */
+.same{
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    border: transparent;
+    position: relative;
+    margin: 50px;
+
+}
+/* header property statrts 
+===================================================================================================*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+   
+
+}
+.header-logo{
+    font-size: 30px;
+  font-weight: 500;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.header-list{
+  
+    display: flex;
+  
+    list-style: none;
+    
+
+
+}
+.header-list a{
+    text-decoration: none;
+    margin:0 15px;
+    letter-spacing: 1px;
+    position: relative;
+   
+}
+.header-list li a:hover{
+    color:#791e85f0;
+
+}
+.header-list li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: #791e85f0;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 2s;
+}
+.header-list li a:hover::after{
+    width: 100%;
+}
+
+.header-icons a i:hover{
+    transform: scale(1.1);
+    color:white;
+   
+}
+.header-icons a i{
+    color: whitesmoke;
+}
+.header-icons a{
+    margin:0 15px;
+   
+    font-size: 30px;
+
+}
+a:visited{
+    color: #7f00ff;
+    
+}
+.download{
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    height: 35px;
+    background-color: #791e85f0;
+    border-radius: 5px;
+    font-size: large;
+}
+.content{
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+
+.middle{
+   font-size: 30px;
+   font-weight: 600;
+    width: max-content;
+    color: #3d535f;
+    animation: moves 4s ease-in-out;
+    
+    position: relative;
+}
+
+
+.same:hover{
+    box-shadow: 5px 5px 5px 4px violet;
+}
+.contentimg{
+    position: relative;
+    top: 30px;
+    height: 600px;
+    width: 400px;
+   /* border-radius: 50%; */
+    /* background-image:  linear-gradient(#7f00ff,#791e85f0); */
+    background-image: url("portfolio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    z-index: 999;
+    
+    position: relative;
+    
+    
+    
+
+}
+
+@keyframes moves {
+    from{top:200px;}
+    to{ top:0px;}
+}
+.ball1{
+    height: 300px;
+    width: 300px;
+    
+    background-image: linear-gradient(#7f00ff,#791e85f0);
+    border-radius: 50%;
+  
+   
+}
+@keyframes ballmove {
+   0%{transform: translateX(300px) translateY(300px);}
+   50%{transform: translateX(0px) translateY(0px);}
+   100%{transform: translateX(300px) translateY(300px);}
+  
+}
+
+.ball2{
+    height: 100px;
+    width: 100px;
+  
+    background-image: linear-gradient(#7f00ff,#791e85f0);
+    border-radius: 50%;
+ 
+   
+
+}
+
+
+.ball3{
+    height: 200px;
+    width: 200px;
+    animation: ballmove 10s infinite;
+    background-image: linear-gradient(#7f00ff,#791e85f0);
+    border-radius: 50%;
+    position: relative;
+}
+/* ============================================================================================================== */
+
+/* card2 property starts
+================================================================================================================== */
+
+.card2-header{
+    position: relative;
+    left: 300px;
+    height: 100px;
+    
+    letter-spacing: 2px;
+    color:#3d535f;
+
+}
+.card2-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.para{
+    width: 600px;
+    height: 300px;
+    /* color: #7b3f00; */
+    color:#3d535f;
+   
+    line-height: 30px;
+    
+}
+
+.immg{
+    width: 400px;
+    height: 400px;
+  
+    background-image: linear-gradient(#7f00ff,#791e85f0);
+      border-radius: 50%;
+      /* animation: inc 4s ease-in;  */
+}
+
+/* ===========================================================================================================*/
+/* card3 property starts
+==================================================================================== */
+
+.card3-header{
+    text-align: center;
+    color: #3d535f;
+   
+    line-height: 70px;
+    letter-spacing: 2px;
+    
+}
+
+.card3-main{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center ;
+    position: relative;
+    left: 100px;
+}
+
+.card-one{
+    width: 400px;
+    height: 450px;
+    background-color: lightblue;
+    position: relative;
+    bottom: 40px;
+    border-radius: 0 30px 0 30px;
+    
+   
+
+  
+}
+
+.card-one:hover{
+    background-color:lightslategray;
+   
+   
+    
+}
+.card-two:hover{
+    background-color:lightslategray;
+}
+.card-one-header{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    color:white;
+    letter-spacing: 4px;
+    text-shadow: 5px 5px 5px  black;
+}
+.card-one-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    height: 400px;
+    line-height: 30px;
+    color:#3d535f;
+
+    
+}
+.card-one-block h3{
+    letter-spacing: 4px;
+    text-decoration-line: line-through;
+}
+
+
+.card-two{
+    width: 400px;
+    height: 450px;
+    background-color:lightblue;
+    position: relative;
+    top: 40px;
+    border-radius:  30px 0 30px 0;
+  
+}
+.card-two-block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+
+}
+.round{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+/* card4 proprty startss
+========================================================================================================== */
+
+.card4{
+    background-color: white;
+}
+
+.card4-header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3d535f;
+    letter-spacing: 2px;
+    
+   
+   
+}
+
+.projects{
+    width: 1100px;
+    height: 500px;
+   display: flex;
+    flex-wrap: wrap;
+    /* background-color: #7f00ff; */
+    position: relative;
+    left: 50px;
+   
+}
+.project-box{
+    height: 230px;
+    width: 360px;
+    background-color:white;
+    margin-right: 6px;
+    border-radius: 30px;
+    color:#3d535f;
+}
+ .hide{
+    height: 50px;
+    width: 360px;
+    text-align: center;
+
+}
+
+
+
+.b1{
+    height: 230px;
+    width: 360px;
+    background-image: url("proj1.jpeg");
+    background-size: cover;
+   
+   border-radius: 30px;
+}
+
+
+
+.b2{
+    height: 230px;
+    width: 360px;
+    background-image: url("proj22.webp");
+    background-size: cover;
+    border-radius: 30px;
+    
+    
+}
+.b3{
+    height: 230px;
+    width: 360px;
+    background-image: url("validd.jpg");
+    background-size: cover;
+    border-radius:  30px;
+}
+.b4{
+    height: 230px;
+    width: 360px;
+    background-image: url("count.jpg");
+    background-size: cover;
+    border-radius: 30px;
+}
+.b5{
+    height: 230px;
+    width: 360px;
+    background-image: url("electr.webp");
+    background-size: cover;
+    border-radius: 30px;
+
+}
+.b6{
+    height: 230px;
+    width: 360px;
+    background-image: url("Web.webp");
+    background-size: cover;
+    border-radius: 30px;
+}
+.card4-ball1{
+    height: 300px;
+    width: 300px;
+
+    background-image: linear-gradient(#7f00ff,#791e85f0);
+    border-radius: 50%;
+    position: relative;
+    left: 900px;
+   
+}
+/* card 5 property start 
+================================================================================================*/
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 1100px;
+    height: 500px;
+    position: relative;
+    left: 50px;
+}
+.form{
+    margin: 100px;
+}
+input{
+    padding: 10px 100px 10px 100px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #791e85f0;
+    text-align: start;
+    color: white;
+}
+label{
+    color: #3d535f;
+
+}
+input[type=submit]:hover{
+    background-color: #7f00ff;
+}
+.card5-header-first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #3d535f;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.card5-header-second{
+    width: 400px;
+    height: 300px;
+    background-color: #791e85f0;
+    padding-left: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+ 
+ 
+}
+
+
+
